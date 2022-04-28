@@ -1,0 +1,25 @@
+table{
+    border-collapse: collapse;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+td, th{
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+tr:nth-child(even){
+    background-color: rgb(126, 131, 133);
+}
+.submit{
+    width: 200px;
+    height: auto;
+    font-size: 16px;
+    position: fixed;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+
+}
