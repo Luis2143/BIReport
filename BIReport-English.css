@@ -1,25 +1,199 @@
-table{
-    border-collapse: collapse;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=League+Gothic&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #eee;
+    height: auto;
+}
+h1{
+    font-weight: 400;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+img{
+    display: block;
+    width: 100%;
+}
+main{
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+}
+#landing{
+    background: #ffff;
+}
+#landing-text{
+    display: flex;
+    flex: 0 1 40vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+#landing-text h2{
+    color: #888;
+}
+#landing-image{
+    background: url('https://lh3.googleusercontent.com/Wdy6Q3OKzEcDgQpVU4rps-MYrrNKE_oWY83RBTcaXYLV1tXoYz-FrAwo-lxtrKZJYchn8uDfvmyDis4P03XpnjqJingnPZPdsBc580jDw_jn3gypV6zTkwSAV-TIXYh9p5rLqe_b=w2400');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    flex: 0 1 60vw;
+    margin: 0;
+}
+.btn{
+    padding: 0.5rem 2rem;
+    border: 1px #ccc solid;
+    display: inline-block;
+    margin: 2rem 0 0;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #333;
+    transition: background 500ms ease-in;
+}
+.btn:hover{
+    background: #f4f4f4;
+}
+#header{
+    padding: 1.5rem;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+#header h2{
+    border-left: dotted 1px #fff;
+    border-right: dotted 1px #fff;
+    display: inline-block;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.caption{
+    padding: 0.8rem;
+    text-align: center;
+}
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: auto;
+    color: #333;
+}
+footer h3{
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+.input{
+    width: 20%;
 }
 td, th{
-    border: 2px solid black;
+    border: 1px solid black;
     text-align: center;
-    padding: 10px 10px 10px 10px;
 }
 tr:nth-child(even){
     background-color: rgb(126, 131, 133);
 }
-.submit{
-    width: 200px;
+.dropdown{
+    position: relative;
+    display: inline-block;
+    padding: 10px 24px 10px 24px;
+} 
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 6px 0px;
+    z-index: 1;
+}
+  
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.input-checkbox{
+    width: 50%;
+}
+.downsymbol{
+    width: 10px;
     height: auto;
-    font-size: 16px;
-    position: fixed;
-    left: 50%;
-    top: 85%;
-    transform: translate(-50%, -50%);
+}
+.dropdown2{
+    position: relative;
+    display: inline-block;
+    padding: 10px 22px 10px 22px;
+} 
+.dropdown-content2{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 6px 0px;
+    z-index: 1;
+    right: 0px;
+}
+  
+.dropdown2:hover .dropdown-content2{
+    display: block;
+}
+.browse{
+    text-align: center;
+}
+.image-links{
+    display: block;
+    margin-left: 46%;
+    margin-right: 50%;
+    width: 50px;
+    height: auto;
+}
+.submit{
+    display: block;
+    margin-left: 31%;
+    margin-right: 50%;
+    margin-top: 10px;
+    width: 40%;
+    height: 30px;
+}
 
+
+
+
+
+
+
+
+@media(min-width: 500px){
+    #landing{
+        display: flex;
+        height: 100%;
+    }
+    #landing-text{
+        height: 100vh;
+    }
+    #landing-image{
+        height: 100vh;
+    }
+    table{
+        width: 100%;
+    }
+}
+
+@media(min-width: 700px){
+   .btn{
+       padding: 1rem 3rem;
+   }
+   table{
+       width: 100%;
+   }
 }
