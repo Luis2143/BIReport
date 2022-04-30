@@ -1,94 +1,414 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv_Uh8dFtIRogmuuHRxq1McFNKx5m_1dk4Iw&usqp=CAU">
-  <link rel="stylesheet" href="BIReport-English.css">
-  <title>BIReport</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="BIReport-English.css">
+    <title>Builders Insulation Report</title>
 </head>
-<form action="https://sheetdb.io/api/v1/vlvci2tuftpin" method="POST" id="sheetdb-form">
-  Date: <input name="data[Date]">
-  Name: <input name="data[Name]">  
-  <table>
-    <tr>
-      <th><u>Jobsite</u></th>
-      <th><u>Complete</u></th>
-      <th><u>Notes</u></th>
-      <th><u>Start</u></th>
-      <th><u>End</u></th>
-    </tr>
-    <tr>
-      <th><u><input name="data[Jobsite]"></u></th>
-      <th><u><input name="data[Complete]"></u></th>
-      <th><u><input name="data[Notes]"></u></th>
-      <th><u><input name="data[Start]"></u></th>
-      <th><u><input name="data[End]"></u></th>
-    </tr>
-    <tr>
-      <th><u><input name="data[Jobsite2]"></u></th>
-      <th><u><input name="data[Complete2]"></u></th>
-      <th><u><input name="data[Notes2]"></u></th>
-      <th><u><input name="data[Start2]"></u></th>
-      <th><u><input name="data[End2]"></u></th>
-    </tr>
-    <tr>
-      <th><u><input name="data[Jobsite3]"></u></th>
-      <th><u><input name="data[Complete3]"></u></th>
-      <th><u><input name="data[Notes3]"></u></th>
-      <th><u><input name="data[Start3]"></u></th>
-      <th><u><input name="data[End3]"></u></th>
-    </tr>
-    <tr>
-      <th><u><input name="data[Jobsite4]"></u></th>
-      <th><u><input name="data[Complete4]"></u></th>
-      <th><u><input name="data[Notes4]"></u></th>
-      <th><u><input name="data[Start4]"></u></th>
-      <th><u><input name="data[End4]"></u></th>
-    </tr>
-    <tr>
-      <th><u><input name="data[Jobsite5]"></u></th>
-      <th><u><input name="data[Complete5]"></u></th>
-      <th><u><input name="data[Notes5]"></u></th>
-      <th><u><input name="data[Start5]"></u></th>
-      <th><u><input name="data[End5]"></u></th>
-    </tr>
-    <tr>
-      <th><u><input name="data[Jobsite6]"></u></th>
-      <th><u><input name="data[Complete6]"></u></th>
-      <th><u><input name="data[Notes6]"></u></th>
-      <th><u><input name="data[Start6]"></u></th>
-      <th><u><input name="data[End6]"></u></th>
-    </tr>
-    <tr>
-      <th><u><input name="data[Jobsite7]"></u></th>
-      <th><u><input name="data[Complete7]"></u></th>
-      <th><u><input name="data[Notes7]"></u></th>
-      <th><u><input name="data[Start7]"></u></th>
-      <th><u><input name="data[End7]"></u></th>
-    </tr>
-    <tr>
-      <th><u><input name="data[Jobsite8]"></u></th>
-      <th><u><input name="data[Complete8]"></u></th>
-      <th><u><input name="data[Notes8]"></u></th>
-      <th><u><input name="data[Start8]"></u></th>
-      <th><u><input name="data[End8]"></u></th>
-    </tr>
-    <tr>
-      <th><u><input name="data[Jobsite9]"></u></th>
-      <th><u><input name="data[Complete9]"></u></th>
-      <th><u><input name="data[Notes9]"></u></th>
-      <th><u><input name="data[Start9]"></u></th>
-      <th><u><input name="data[End9]"></u></th>
-    </tr>
-    <tr>
-      <th><u><input name="data[Jobsite10]"></u></th>
-      <th><u><input name="data[Complete10]"></u></th>
-      <th><u><input name="data[Notes10]"></u></th>
-      <th><u><input name="data[Start10]"></u></th>
-      <th><u><input name="data[End10]"></u></th>
-    </tr>
-  </table>
-  <button type="submit" class="submit">Submit</button>
-</form>
+<body>
+    <main>
+        <div id="landing">
+            <div id="landing-text">
+                <div id="landing-text-inner">
+                    <h1>Builders Insulation Daily Work Report</h1>
+                    <h2>8705 Sidney Cir, Charlotte, NC 28269</h2>
+                    <a href="#images" class="btn" id="view-work">
+                    Languages
+                    </a>
+                </div>
+            </div>
+            <div id="landing-image"></div>
+        </div>
 
-<script src="BIReport-Universal.js"></script>
+        <div id="images">
+          <!-- THIS IS FOR ANY FURTURE IMAGES / TEXT
+          <img src="https://image.shutterstock.com/image-photo/hanging-shoes-thrift-store-260nw-1480063814.jpg" alt="">
+            <div class="caption">
+                <h3>Photo One</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, neque? Et reprehenderit omnis quos iste. Assumenda, sequi unde libero ipsam, ea blanditiis quis nihil facilis labore iusto dicta quisquam minima.</p>
+            </div>
+          -->
+            <form action="https://sheetdb.io/api/v1/vlvci2tuftpin" method="POST" id="sheetdb-form">
+                Date: <input required type="date" name="data[Date]">
+                Name: <input required name="data[Name]" placeholder="First Name and Last Inital">  
+                <table>
+                  <tr>
+                    <th><u>Jobsite*</u></th>
+                    <th><u>Complete</u></th>
+                    <th><u>Notes</u></th>
+                    <th><u>Start*</u></th>
+                    <th><u>End*</u></th>
+                  </tr>
+                  <tr>
+                    <th>
+                        <div class="dropdown">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content">
+                            <input required name="data[Jobsite]">
+                            </div>
+                        </div>
+                    </th>
+                    <th><u><input type="checkbox" name="data[Complete]"></u></th>
+                    <th>
+                        <div class="dropdown2">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content2">
+                            <input name="data[Notes]">
+                            
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="dropdown2">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content2">
+                            <input required name="data[Start]">
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="dropdown2">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content2">
+                            <input required name="data[End]">
+                            </div>
+                        </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>
+                        <div class="dropdown">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content">
+                            <input name="data[Jobsite2]">
+                            </div>
+                        </div>
+                    </th>
+                    <th><u><input type="checkbox" name="data[Complete2]"></u></th>
+                    <th>
+                        <div class="dropdown2">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content2">
+                            <input name="data[Notes2]">
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="dropdown2">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content2">
+                            <input name="data[Start2]">
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="dropdown2">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content2">
+                            <input name="data[End2]">
+                            </div>
+                        </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>
+                        <div class="dropdown">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content">
+                            <input name="data[Jobsite3]">
+                            </div>
+                        </div>
+                    </th>
+                    <th><u><input type="checkbox" name="data[Complete3]"></u></th>
+                    <th>
+                        <div class="dropdown2">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content2">
+                            <input name="data[Notes3]">
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="dropdown2">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content2">
+                            <input name="data[Start3]">
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="dropdown2">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content2">
+                            <input name="data[End3]">
+                            </div>
+                        </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>
+                        <div class="dropdown">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content">
+                            <input name="data[Jobsite4]">
+                            </div>
+                        </div>
+                    </th>
+                    <th><u><input type="checkbox" name="data[Complete4]"></u></th>
+                    <th>
+                        <div class="dropdown2">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content2">
+                            <input name="data[Notes4]">
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="dropdown2">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content2">
+                            <input name="data[Start4]">
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="dropdown2">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content2">
+                            <input name="data[End4]">
+                            </div>
+                        </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>
+                        <div class="dropdown">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content">
+                            <input name="data[Jobsite5]">
+                            </div>
+                        </div>
+                    </th>
+                    <th><u><input type="checkbox" name="data[Complete5]"></u></th>
+                    <th>
+                        <div class="dropdown2">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content2">
+                            <input name="data[Notes5]">
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="dropdown2">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content2">
+                            <input name="data[Start5]">
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="dropdown2">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content2">
+                            <input name="data[End5]">
+                            </div>
+                        </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>
+                        <div class="dropdown">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content">
+                            <input name="data[Jobsite6]">
+                            </div>
+                        </div>
+                    </th>
+                    <th><u><input type="checkbox" name="data[Complete6]"></u></th>
+                    <th>
+                        <div class="dropdown2">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content2">
+                            <input name="data[Notes6]">
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="dropdown2">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content2">
+                            <input name="data[Start6]">
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="dropdown2">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content2">
+                            <input name="data[End6]">
+                            </div>
+                        </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>
+                        <div class="dropdown">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content">
+                            <input name="data[Jobsite7]">
+                            </div>
+                        </div>
+                    </th>
+                    <th><u><input type="checkbox" name="data[Complete7]"></u></th>
+                    <th>
+                        <div class="dropdown2">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content2">
+                            <input name="data[Notes7]">
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="dropdown2">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content2">
+                            <input name="data[Start7]">
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="dropdown2">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content2">
+                            <input name="data[End7]">
+                            </div>
+                        </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>
+                        <div class="dropdown">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content">
+                            <input name="data[Jobsite8]">
+                            </div>
+                        </div>
+                    </th>
+                    <th><u><input type="checkbox" name="data[Complete8]"></u></th>
+                    <th>
+                        <div class="dropdown2">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content2">
+                            <input name="data[Notes8]">
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="dropdown2">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content2">
+                            <input name="data[Start8]">
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="dropdown2">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content2">
+                            <input name="data[End8]">
+                            </div>
+                        </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>
+                        <div class="dropdown">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content">
+                            <input name="data[Jobsite9]">
+                            </div>
+                        </div>
+                    </th>
+                    <th><u><input type="checkbox" name="data[Complete9]"></u></th>
+                    <th>
+                        <div class="dropdown2">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content2">
+                            <input name="data[Notes9]">
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="dropdown2">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content2">
+                            <input name="data[Start9]">
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="dropdown2">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content2">
+                            <input name="data[End9]">
+                            </div>
+                        </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>
+                        <div class="dropdown">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content">
+                            <input name="data[Jobsite10]">
+                            </div>
+                        </div>
+                    </th>
+                    <th><u><input type="checkbox" name="data[Complete10]"></u></th>
+                    <th>
+                        <div class="dropdown2">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content2">
+                            <input name="data[Notes10]">
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="dropdown2">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content2">
+                            <input name="data[Start10]">
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="dropdown2">
+                            <img class="downsymbol" src="https://bit.ly/39ksMIV">
+                            <div class="dropdown-content2">
+                            <input name="data[End10]">
+                            </div>
+                        </div>
+                    </th>
+                  </tr>
+                </table>
+                <button type="submit" class="submit">Submit</button>
+              </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>Designed by <strong>Luis Cuarenta Alvarado</strong></p>
+        <p><strong>luisc4040@icloud.com</strong></p>
+        <p>Translated by <strong>Jessica Calderon</strong></p>
+        <p><strong>sampletext@gmail.com</strong></p>
+        <a href="https://github.com/Luis2143/BIReport">
+          <img class="image-links" src="https://lh3.googleusercontent.com/wpDEDbEmptw--Hx5KVkelQ1_ydPLwu1mSIImfh6luiFxSrhVH9DB5cJNY06mSK0mHwISA-AMDk6O8qoaIbg9F6sTCnYjHFDtpFOq-QfBRdccCPhrafMBC3QEJs5yTIb2I3OgGo8H=s120-p-k" alt="github">
+        </a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="BIReport-Universal.js"></script>
+</body>
 </html>
