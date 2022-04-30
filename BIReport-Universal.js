@@ -1,4 +1,4 @@
-  var form = document.getElementById('sheetdb-form');
+var form = document.getElementById('sheetdb-form');
   form.addEventListener("submit", e => {
     e.preventDefault();
     fetch(form.action, {
@@ -7,15 +7,16 @@
     }).then(
         response => response.json()
     ).then((html) => {
-      // you can put any JS code here
-      alert('Thanks')
+
+      alert("We've recived your submission. Thanks!")
     });
   });
 
-  form.addEventListener('submit', function handleSubmit(event) {
-    event.preventDefault();
-  
-    form.reset();
-  });
+  const form1 = document.getElementById('sheetdb-form');
 
-  
+form1.addEventListener('submit', function handleSubmit(event) {
+  event.preventDefault();
+
+  form1.reset();
+});
+
